@@ -25,7 +25,7 @@ export default function Home() {
           <a href="#projetos">Projetos</a>
           <a href="#processo">Como funciona</a>
         </nav>
-        <a className="headerCta" href="#orcamento">Solicitar projeto</a>
+        <a className="headerCta" href="https://api.whatsapp.com/send/?phone=94992330654&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">Solicitar projeto</a>
       </header>
 
       <section id="top" className="hero">
@@ -35,7 +35,7 @@ export default function Home() {
           <h1>Ambientes únicos,<br />planejados para você.</h1>
           <p className="heroText">Projetos que combinam estética, funcionalidade e precisão em cada detalhe.</p>
           <div className="actions">
-            <a className="primary" href="#orcamento">Quero meu projeto</a>
+            <a className="primary" href="https://api.whatsapp.com/send/?phone=94992330654&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">Quero meu projeto</a>
             <a className="secondary" href="#projetos">Conhecer projetos</a>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
             <span>COZINHA • CONCEITO</span>
             <h3>Marcenaria que organiza o espaço e também define sua identidade.</h3>
             <p>Linhas limpas, materiais quentes, iluminação integrada e soluções sob medida.</p>
-            <a href="#orcamento">Iniciar projeto →</a>
+            <a href="https://api.whatsapp.com/send/?phone=94992330654&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">Iniciar projeto →</a>
           </div>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="leadForm">
             <input placeholder="Seu nome" />
             <input placeholder="WhatsApp" />
-            <button>Receber atendimento</button>
+            <a className="leadButton" href="https://api.whatsapp.com/send/?phone=94992330654&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">Receber atendimento</a>
           </div>
           <small>Protótipo visual — o formulário ainda não envia dados.</small>
         </div>
@@ -120,8 +120,14 @@ export default function Home() {
       <footer>
         <div className="brand footerBrand"><strong>Novotok</strong><span>MÓVEIS PLANEJADOS</span></div>
         <p>Exclusividade • Sofisticação • Precisão</p>
-        <a href="#top">Voltar ao topo ↑</a>
+        <div className="footerLinks">
+          <a href="https://api.whatsapp.com/send/?phone=94992330654&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">WhatsApp 1</a>
+          <a href="https://api.whatsapp.com/send/?phone=94992014458&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">WhatsApp 2</a>
+          <a href="https://www.instagram.com/novotokmoveis___planejados_?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#top">Voltar ao topo ↑</a>
+        </div>
       </footer>
+      <a className="whatsappFloat" href="https://api.whatsapp.com/send/?phone=94992330654&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer" aria-label="Falar com a Novotok no WhatsApp">WhatsApp</a>
     </main>
   );
 }
