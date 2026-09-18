@@ -12,6 +12,8 @@ const steps = [
   ["05", "Instalação", "A entrega finaliza a transformação do espaço."],
 ];
 
+import ProjectForm from "../components/ProjectForm";
+
 export default function Home() {
   return (
     <main>
@@ -101,21 +103,7 @@ export default function Home() {
         <p className="note">Fluxo provisório para o protótipo. O processo comercial real da empresa deve ser confirmado antes da publicação.</p>
       </section>
 
-      <section id="orcamento" className="planner">
-        <div className="plannerInner">
-          <p className="eyebrow">COMECE SEU PROJETO</p>
-          <h2>Qual ambiente você quer transformar?</h2>
-          <div className="choices">
-            {["Cozinha","Quarto","Closet","Sala","Área gourmet","Comercial"].map(item => <button key={item}>{item}</button>)}
-          </div>
-          <div className="leadForm">
-            <input placeholder="Seu nome" />
-            <input placeholder="WhatsApp" />
-            <a className="leadButton" href="https://api.whatsapp.com/send/?phone=94992330654&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">Receber atendimento</a>
-          </div>
-          <small>Protótipo visual — o formulário ainda não envia dados.</small>
-        </div>
-      </section>
+      <ProjectForm />
 
       <footer>
         <div className="brand footerBrand"><strong>Novotok</strong><span>MÓVEIS PLANEJADOS</span></div>
