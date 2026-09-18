@@ -2,6 +2,9 @@ const environments = [
   ["Cozinhas", "https://i.pinimg.com/originals/5d/2f/b8/5d2fb87f8c6aacb1d930e01e401f8a05.jpg"],
   ["Closets", "https://www.dallasprocloset.com/assets/images/resources/about-img.webp"],
   ["Salas", "https://images.squarespace-cdn.com/content/v1/687fa9a5af38684efff965dd/a370cf48-6c92-4696-bb66-bda00a6c84b0/custom-built-in-entertainment-center-florida.jpeg"],
+  ["Quartos", "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=85"],
+  ["Área gourmet", "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"],
+  ["Comercial", "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=85"],
 ];
 
 const steps = [
@@ -48,7 +51,7 @@ export default function Home() {
         <div className="sectionIntro">
           <p className="eyebrow dark">AMBIENTES</p>
           <h2>Planejado para cada espaço da sua vida.</h2>
-          <p>Uma arquitetura visual pensada para destacar o ambiente antes do móvel isolado.</p>
+          <p>Do primeiro desenho ao último detalhe, cada ambiente nasce para unir estética, funcionalidade e identidade.</p>
         </div>
         <div className="editorialGrid">
           {environments.map(([name, image], i) => (
@@ -86,6 +89,16 @@ export default function Home() {
         <p>Cada projeto deve responder à rotina, proporção, armazenamento, estética e circulação do espaço.</p>
       </section>
 
+      <section className="detailsSection">
+        <div className="detailsImage" />
+        <div className="detailsCopy">
+          <p className="eyebrow dark">DETALHES & ACABAMENTOS</p>
+          <h2>O alto padrão aparece onde poucos olham.</h2>
+          <p>Texturas, iluminação, encaixes e proporções trabalham juntos para transformar marcenaria em arquitetura de interiores.</p>
+          <div className="detailTags"><span>Acabamentos</span><span>Iluminação</span><span>Funcionalidade</span><span>Precisão</span></div>
+        </div>
+      </section>
+
       <section id="processo" className="section processSection">
         <div className="sectionIntro">
           <p className="eyebrow dark">PROCESSO</p>
@@ -100,10 +113,19 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="note">Fluxo provisório para o protótipo. O processo comercial real da empresa deve ser confirmado antes da publicação.</p>
+
       </section>
 
       <ProjectForm />
+
+      <section className="finalCta">
+        <div>
+          <p className="eyebrow">NOVOTOK MÓVEIS PLANEJADOS</p>
+          <h2>Seu próximo ambiente<br />começa com um projeto.</h2>
+          <p>Fale com a Novotok e dê o primeiro passo para transformar seu espaço.</p>
+          <a href="#orcamento">Começar meu projeto →</a>
+        </div>
+      </section>
 
       <footer>
         <div className="brand footerBrand"><strong>Novotok</strong><span>MÓVEIS PLANEJADOS</span></div>
